@@ -1,0 +1,319 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Header section start */
+header{
+    width:100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index:1000;
+    background-color: white;
+}
+.container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 86px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+.container .logo{
+    width: 178px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .location{
+    width: 320px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.container .location .location-content{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 18px;
+}
+.container .location .location-desc{
+    display: flex;
+    gap:10px;
+    transform: translateX(-48px);
+}
+.arrow-down{
+    transform: translateY(-2px);
+}
+.container .search-bar{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    height: 40px;
+    border-radius: 10px;
+    background: rgb(248, 248, 248);
+}
+.container .search-bar input{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    background: rgb(248, 248, 248);
+    font-size: 16px;
+}
+.container .search-bar svg{
+    padding: 0 10px;
+}
+.container .login{
+    width: 162px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .login p a{
+    font-size: 18px;
+    color: #363636;
+    text-decoration: none;
+}
+.container .cart{
+    margin: 0 32px 0 12px;
+}
+.container .cart button{
+    width: 112px;
+    display: flex;
+    height: 52px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(12, 131, 31);
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+.container .cart button p{
+    font-size: 14px;
+}
+.container .cart button svg{
+    height: 20px;
+}
+/* Header section ends */
+
+/* Main Section starts */
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    max-width: 85%;
+}
+/* Section-1 starts */
+.main-container .banner{
+    display: flex;
+    justify-content: center;
+}
+.main-container .banner img{
+    width:100%;
+    height:234px;
+    border-radius: 0px; 
+    object-fit: fill; 
+    cursor: default;
+}
+/* Section-1 ends */
+
+/* Section-2  starts */
+.main-container .section-2{
+    margin: 16px;
+    display: flex;
+    overflow: auto scroll;
+    column-gap: 20px;
+    border-radius: 12px;
+    overflow-y: hidden
+    ;
+}
+.section-2-item {
+
+    height: 195px;
+    width: 335.4px;
+    cursor: pointer;
+    display: flex;
+}
+.section-2-item img {
+    height: 100%;
+}
+/* Section-2  ends */
+
+/* Section-3 starts */
+.main-container .item-cards{
+    margin: 16px 0;
+}
+
+.main-container .item-cards .item{
+    width:128px;
+    height: 188px;
+}
+.main-container .item-cards .item img{
+    width:100%;
+    height: 100%;
+}
+.main-container .item-cards{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+/* Section-3 ends */
+
+/* Section-4  & Section 5 starts */
+.main-container .dairy ,.main-container .snacks{
+    width: 100%;
+}
+.headline-content{
+    display: flex;
+    justify-content: space-between;
+}
+.headline-content .see-all {
+    margin-right: 12px;
+
+}
+.headline-content .see-all a{
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(12, 131, 31);
+}
+
+.cards .item img{
+    width: 148px;
+    height: 148px;
+    display: flex;
+    margin:auto;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(6 ,1fr);
+    gap:16px;
+}
+.cards .item{
+    margin-top: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.cards .item h4{
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    font-size: 13px;
+    display: -webkit-box;
+    line-height: 16px;
+    width: 100%;
+    height: 36px;
+    margin-bottom: 8px;
+}
+.cards .item >p{
+    margin-top: 0;
+    color: #666666;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.cards .item .item-rate{
+    display: flex;
+    justify-content: space-between;
+}
+.cards .item .item-rate button{
+    padding: 5px 20px;
+    cursor: pointer;
+    width: 66px;
+    border: 1px solid rgb(49, 134, 22);
+    height: 31px;
+    color: rgb(49, 134, 22);
+    font-weight: 600;
+    font-size: 13px;
+    background-color: rgb(247, 255, 249);
+    border-radius: 0.375rem;
+    gap: 0.125rem;
+    display: flex;
+}
+.snacks{
+    margin:32px 0;
+}
+/* Setion-4 and Section 5 end */
+
+/* Footer section start */
+footer p{
+    text-align: center;
+    margin-top: 32px;
+    padding: 20px;
+}
+/* Footer section ends */
+
+/* Media queries start */
+
+@media screen and (min-width:320px) and (max-width:480px){
+
+    header , main ,footer{
+        width:1140px;
+    }
+
+    .container .location .location-content p{
+        font-size: 18px;
+    }
+
+    .main-container .item-cards{
+        grid-template-columns: repeat(6,1fr);
+        column-gap: 36px;
+    }
+
+    .main-container .dairy .headline-content{
+        margin-right: 20px;
+    }
+
+    .cards .item img{
+        width:100px;
+        height: 100px;
+    }
+}   
+
+@media screen and (min-width:481px) and (max-width:768px){
+    
+    header,main ,footer{
+        width: 1280px;
+    }
+
+    .main-container .item-cards{
+        grid-template-columns: repeat(8,1fr);
+        column-gap: 8px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    
+    header,main ,footer{
+        width: 1355px;
+    }
+
+    .main-container .item-cards{
+        grid-template-columns: repeat(8,1fr);
+        column-gap: 16px;
+    }
+}
+@media screen and (min-width:1025px) and (max-width:1280px){
+    
+    header,main ,footer{
+        width: 1280px;
+    }
+
+    .main-container .item-cards{
+        grid-template-columns: repeat(8,1fr);
+        column-gap: 16px;
+    }
+}
+/* Media query ends */
